@@ -1,29 +1,8 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
+    <svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
 
-    <title>tv-set</title>
-
-
-
-
-
-</head>
-
-<body>
-
-
-
-
-    <svg width="500" height="500">
-
-      
-         
+   
 
         <ellipse rx="50" ry="20" cx="150" cy="330" fill="grey"/>
         <circle r="60" cx="150" cy="270" fill="Orange"/>
@@ -56,17 +35,6 @@
         <circle r="5" cx="325" cy="260" fill="black"/>
         <ellipse rx="5" ry="10" cx="350" cy="310" fill="Maroon"/>
 
-        
-
-
-
-
-       
-
-
-
+  
     </svg>
 
-</body>
-
-</html>
