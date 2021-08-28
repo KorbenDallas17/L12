@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <title>tv-set</title>
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+    <svg width="500" height="500">
+
+      
+         
+
+        <ellipse rx="50" ry="20" cx="150" cy="330" fill="grey"/>
+        <circle r="60" cx="150" cy="270" fill="Orange"/>
+        <circle r="25" cx="140" cy="260" fill="LightYellow"/>
+        <circle r="25" cx="175" cy="260" fill="LightYellow"/>
+        <circle r="5" cx="177" cy="260" fill="black"/>
+        <circle r="5" cx="145" cy="260" fill="black"/>
+        <circle r="10" cx="158" cy="285" fill="black"/>
+        <ellipse rx="10" ry="5" cx="150" cy="310" fill="Maroon"/>
+        <ellipse rx="50" ry="20" cx="45" cy="280" 
+        transform = "rotate(20, 70, 310)"  fill="Orange"/>
+        <polygon points="95,245 120,220 85,205"
+        fill="Orange" />
+        <polygon points="205,250 180,220 210,205"
+        fill="Orange" />     
+        <polygon points="100,240 115,225 93,215"
+        fill="black" />
+        <polygon points="202,235 187,222 205,213"
+        fill="black" />
+        <polygon points="20,260 30,280 40,250"
+        fill="LightYellow" />
+
+
+
+        <ellipse rx="50" ry="20" cx="350" cy="330" fill="grey"/>
+        <circle r="60" cx="350" cy="270" fill="Gold"/>
+        <circle r="25" cx="330" cy="260" fill="LightYellow"/>
+        <circle r="25" cx="365" cy="260" fill="LightYellow"/>
+        <circle r="5" cx="357" cy="260" fill="black"/>
+        <circle r="5" cx="325" cy="260" fill="black"/>
+        <ellipse rx="5" ry="10" cx="350" cy="310" fill="Maroon"/>
+
+        
+
+
+
+
+       
+
+
+
+    </svg>
+
+</body>
+
+</html>
