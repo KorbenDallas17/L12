@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document for testing js</title>
+</head>
+<body>
+  <h1>Привет</h1>
+
+  <script>
+   
+
+
+    // С помощью CLASS
+    //Создаем класс Vehicle
+
+    class Vehicle{
+      constructor(name, year){
+        this.name = name;
+        this.year = year;
+      }
+
+      getName() {
+      return (`Модель: ${this.name}`);
+      }
+
+      getYear () {
+      return (`Год выпуска: ${this.year}`);
+      }
+
+      getInfo () {
+      console.log(`${this.getName()}. ${this.getYear()}`);
+    };
+    };
+
+     //проверяем
+
+    let bicycle = new Vehicle("Аист", 2021);
+    bicycle.getInfo();
+
+     //Создаем класс Car от Vehicle
+
+
+    class Car extends Vehicle {
+      constructor(name, year, sunRuf = false){
+      super(name, year);
+      this.sunRuf = sunRuf;
+    }
+    hasSunRoof () {
+      console.log(this.sunRoof ? "В машине есть люк" : "В машине люка нет");
+    }
+  
+
+  getInfo() {
+      const _maxSpeed = 160;
+      const _wheels = 4;
+
+      function _getMaxSpeed() {
+        return (`${_maxSpeed} km/h`);
+      }
+
+      console.log(`${this.getName()}
+                  ${this.getYear()}
+                  Колес: ${_wheels}
+                  Макс. скорость: ${_getMaxSpeed()}`);
+    };
+
+}
+
+
+
+ //проверяем
+    let audi = new Car ("Audi", 1999);
+    audi.getInfo();
+    audi.hasSunRoof();
+
+//Создаем класс MOTO от Vehicle
+
+
+class Moto extends Vehicle {
+  constructor(name, year){
+    super(name, year)
+  this.wheels = 2
+}
+}
+
+//проверяем
+let suzuki = new  Moto ("suzuki", 2021);
+suzuki.getInfo();
+
+//Cоздаем водителя
+
+class Driver{
+  constructor(drivername, driverold){
+    this.drivername = drivername;
+    this.driverold = driverold;
+  }
+
+displayInfo() {
+      console.log(`Водитель: ${this.drivername}; возраст: ${this.driverold}`);
+}
+
+driveCar(vehicle) {
+      console.log(`${this.drivername} работает на ${vehicle.name} ${vehicle.year} года выпуска`);
+    }
+  }
+
+
+
+    const Vasily = new Driver("Вася", 38);
+    const Egor = new Driver("Егор", 27);
+    Vasily.displayInfo()
+
+
+    Vasily.driveCar(audi);
+    Egor.driveCar(suzuki);
+
+
+
+    
+
+  </script>
+</body>
+</html>
